@@ -1,0 +1,19 @@
+{% extends "bootstrap/base.html" %}
+
+{% block title %}
+Testing push notifications
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <br>
+    <div class="row">
+        <a class="btn btn-primary js-push-btn">Enable push notifications</a>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+{{ super() }}
+<script src="/static/main.js"></script>
+{% endblock %}
